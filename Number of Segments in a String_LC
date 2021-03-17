@@ -1,0 +1,15 @@
+class Solution {
+    public int countSegments(String s) {
+        if(s.equals(""))
+            return 0;
+        
+        String[] words=s.split(" ");
+        int cnt=0;
+        for(String w:words){
+            if(!w.equals("")){
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+}
