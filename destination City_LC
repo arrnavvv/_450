@@ -1,0 +1,16 @@
+class Solution {
+    public String destCity(List<List<String>> paths) {
+        HashSet<String> city = new HashSet<>();
+        for(List<String> tup:paths){
+            city.add(tup.get(0));
+        }
+        String ans="";
+        for(List<String> tup:paths){
+            if(!city.contains(tup.get(1))){
+                ans = tup.get(1);
+            }
+            
+        }
+        return ans;
+    }
+}
